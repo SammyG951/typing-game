@@ -1,0 +1,52 @@
+
+:root {
+    --primary-color: #2C3333;
+    --primary-color-alt: #343c3c;
+    --secondary-color: #2E4F4F;
+    --teriary-color: #0E8388;
+    --quaternary-color: #CBE4DE;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #F0FBFF;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    padding-bottom: 300px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 50px auto 50px auto;
+}
+
+.highlight {
+    color: yellow;
+}
+
+.home-page-btn {
+    font-family: 'Merriweather', serif;
+    padding: 10px 20px 10px 20px;
+    color: #F0FBFF;
+    background: var(--secondary-color);
+}
+
+.home-page-btn:hover {
+    background: var(--teriary-color);
+}
+
+.error:focus {
+    background-color: lightcoral;
+    border: red;
+}
+
+.form-control {
+    width: 25vw;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
