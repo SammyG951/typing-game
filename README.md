@@ -2,11 +2,19 @@
 
 ## Table of contents
 
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
 - [My Process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Contact](#contact)
+
+## Overview
+
+### Screenshot
+
+![Typing Game Screenshot](typing-game-screenshot.png)
 
 ## My Process
 
