@@ -32,7 +32,7 @@
 
 ## Author
 
-- Github - [@SammyG951](https://github.com/)
+- Github - [@SammyG951](https://github.com/SammyG951)
 
 ## Contact
 
