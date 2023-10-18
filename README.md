@@ -14,7 +14,7 @@
 
 ### Screenshot
 
-![Typing Game Screenshot](typing-game-screenshot.png)
+![Typing Game Screenshot](screenshot.png)
 
 ## My Process
 
