@@ -1,5 +1,5 @@
 
-const quotes = [
+const phrases = [
     'Traveling became almost extinct during the pandemic. This made him feel like an old-style rootbeer float smells. Garlic ice-cream was her favorite.',
     'The bird had a belief that it was really a groundhog. As he looked out the window, he saw a clown walk by. The glacier came alive as the climbers hiked closer.',
     'The gloves protect my feet from excess work. The wake behind the boat told of the past while the open sea for told life in the unknown future. He found his art never progressed when he literally used his sweat and tears.',
@@ -19,7 +19,7 @@ let wordIndex = 0;
 
 let startTime = Date.now;
 
-const quoteElement = document.getElementById('quote');
+const phraseElement = document.getElementById('phrase');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
 const startButtonElement = document.getElementById('start');
@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 startButtonElement.addEventListener('click', () => {
 
-    const quoteIndex = Math.floor(Math.random() * quotes.length);
-    const quote = quotes[quoteIndex];
-    words = quote.split(' ');
+    const phraseIndex = Math.floor(Math.random() * phrases.length);
+    const phrase = phrases[phraseIndex];
+    words = phrase.split(' ');
     wordIndex = 0;
 
     const spanWords = words.map(function(word) { return `<span>${word} </span>` });
-    quoteElement.innerHTML = spanWords.join('');
-    quoteElement.childNodes[0].className = 'highlight';
+    phraseElement.innerHTML = spanWords.join('');
+    phraseElement.childNodes[0].className = 'highlight';
     messageElement.innerText = '';
 
     typedValueElement.type = 'text';
@@ -76,11 +76,11 @@ typedValueElement.addEventListener('input', () => {
         typedValueElement.value = '';
         wordIndex++;
 
-        for(const wordElement of quoteElement.childNodes){
+        for(const wordElement of phraseElement.childNodes){
             wordElement.className = '';
         }
 
-        quoteElement.childNodes[wordIndex].className = 'highlight';
+        phraseElement.childNodes[wordIndex].className = 'highlight';
 
     } else if (currentWord.startsWith(typedValue)) {
 
