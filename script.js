@@ -17,7 +17,7 @@ const phrases = [
 let words = [];
 let wordIndex = 0;
 
-let startTime = Date.now;
+let startTime;
 
 const phraseElement = document.getElementById('phrase');
 const messageElement = document.getElementById('message');
@@ -58,7 +58,8 @@ typedValueElement.addEventListener('input', () => {
 
     if (typedValue === currentWord && wordIndex === words.length - 1) {
         const elapsedTime = new Date().getTime() - startTime;
-        const message = `CONGRATUALTIONS! You finished in ${elapsedTime / 1000} seconds.`;
+        const wpm = (words.length / (elapsedTime / 1000)) * 60;
+        const message = `CONGRATUALTIONS! You finished in ${elapsedTime / 1000} seconds at ${wpm.toFixed(2)} words per minute.`;
         messageElement.innerText = message;
 
         if ((elapsedTime / 1000) < localStorage.getItem('lowestTime')){
